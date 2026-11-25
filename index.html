@@ -8,49 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="game-shell">
-      <div class="sky-glow sky-glow--left" aria-hidden="true"></div>
-      <div class="sky-glow sky-glow--right" aria-hidden="true"></div>
-
-      <section class="start-screen" id="startScreen" aria-labelledby="gameTitle">
-        <div class="brand-mark" aria-hidden="true">
-          <span class="brand-mark__hourglass">
-            <span class="brand-mark__sand"></span>
-          </span>
-        </div>
-
-        <p class="eyebrow">A study adventure</p>
-        <h1 id="gameTitle">Time <span>Dungeon</span></h1>
-
-        <p class="description">
-          Turn focused study time into adventure. Earn points, customize your hero,
-          and unlock deeper levels with every session.
-        </p>
-
-        <button class="start-button" id="startButton" type="button">
-          <span>Start Game</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5 12h13M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-          </svg>
-        </button>
-
-        <div class="progress-key" aria-label="Game progress features">
-          <span><i class="key-dot key-dot--amber"></i>Study</span>
-          <span><i class="key-dot key-dot--violet"></i>Earn</span>
-          <span><i class="key-dot key-dot--blue"></i>Explore</span>
-        </div>
-      </section>
-
-      <section class="game-screen" id="gameScreen" aria-labelledby="gameScreenTitle" hidden>
-        <p class="eyebrow">The adventure begins</p>
-        <h2 id="gameScreenTitle">Choose Your First Quest</h2>
-        <p class="description">Your main game screen is ready for the next development phase.</p>
-        <button class="back-button" id="backButton" type="button">Back to Start</button>
-      </section>
-    </main>
-    <script src="script.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
